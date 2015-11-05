@@ -1,0 +1,17 @@
+{
+	"forge_marker": 1,
+	"defaults": {
+		"model": "cube_all",
+		"textures":{
+			"all": "fmltextureerrorstestmod:blocks/working_animation"
+		}
+	},
+	"variants": {
+		"normal": [ { } ],
+		"inventory": [
+			{
+				"transform": "forge:default-block"
+			}
+		]
+	}
+}
