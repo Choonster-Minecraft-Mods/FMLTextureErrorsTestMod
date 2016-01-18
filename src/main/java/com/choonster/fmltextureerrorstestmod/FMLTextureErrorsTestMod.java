@@ -29,11 +29,13 @@ public class FMLTextureErrorsTestMod {
 
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
+		// Broken mcmeta file (syntax error)
 		Block brokenAnimation = new Block(Material.iron);
 		brokenAnimation.setCreativeTab(CreativeTabs.tabBlock);
 		brokenAnimation.setUnlocalizedName("brokenAnimation");
 		GameRegistry.registerBlock(brokenAnimation, "broken_animation");
 
+		// Working animation
 		Block workingAnimation = new Block(Material.iron);
 		workingAnimation.setCreativeTab(CreativeTabs.tabBlock);
 		workingAnimation.setUnlocalizedName("workingAnimation");
