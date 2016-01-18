@@ -35,6 +35,12 @@ public class FMLTextureErrorsTestMod {
 		brokenAnimation.setUnlocalizedName("brokenAnimation");
 		GameRegistry.registerBlock(brokenAnimation, "broken_animation");
 
+		// Missing mcmeta file (wrong file name)
+		Block missingAnimation = new Block(Material.iron);
+		missingAnimation.setCreativeTab(CreativeTabs.tabBlock);
+		missingAnimation.setUnlocalizedName("missingAnimation");
+		GameRegistry.registerBlock(missingAnimation, "missing_animation");
+
 		// Working animation
 		Block workingAnimation = new Block(Material.iron);
 		workingAnimation.setCreativeTab(CreativeTabs.tabBlock);
